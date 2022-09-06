@@ -13,3 +13,12 @@ end
 
 
 define_target("basic_type")
+define_target("assign")
+define_target("getchar_putchar")
+define_target("switch")
+define_target("goto")
+define_target("array")
+define_target("function")
+define_target("var")
+define_target("scope")
+define_target("macro")
