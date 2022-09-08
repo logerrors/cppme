@@ -1,4 +1,4 @@
-add_rules("mode.debug", "mode.release")
+add_rules("mode.debug", "mode.release", "mode.asan")
 
 set_languages("c++17")
 
@@ -36,3 +36,6 @@ define_target("iostream")
 define_target("ref")
 define_target("memory_model")
 define_target("null")
+define_target("inline")
+define_target("vector")
+define_target("cast")

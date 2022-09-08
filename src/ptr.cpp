@@ -48,5 +48,23 @@ int main(int argc, char const *argv[])
 
     int c = (*p_max)(3, 4);
     IC(c);
+
+    char str[] = "hello world";
+    char str2[] = "hello";
+
+    const char* p1 = str;
+    char* const p2 = str2;
+
+    // const char* 这个指针本身可以动, 但是不可以通过这个指针来变更指向的对象
+    printf("p1 : %s \n", p1);
+    p1 = str2;
+    // p1[1] = 'm';
+    printf("p1 : %s \n", p1);
+
+    // char* const 这个指针自己不允许变, 但是可以通过这个指针来变更指向的对象
+    printf("str2 : %s \n", str2);
+    p2[1] = 'm';
+    // p2 = str;
+    printf("str2 : %s \n", str2);
     return 0;
 }

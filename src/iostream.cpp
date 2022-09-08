@@ -22,12 +22,13 @@ std::istream& operator >>(std::istream& in, struct student& stu){
 int main(int argc, char const *argv[])
 {
     struct student xiaoming = {
-        .num = 234,
-        .name = "xiaoming",
-        .sex = 1,
-        .age = 17,
-        .address = "beijing"
+        234,
+        "xiaoming",
+        1,
+        17,
+        "beijing"
     };
+
 
     std::cout << xiaoming << std::endl;
 
